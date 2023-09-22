@@ -53,23 +53,23 @@ Berikut adalah screenshot flag dari soal 3.
 ## Soal 5
 Dalam soal diberikan sebuah file .zip dan file .pcap tetapi tidak ada data netcat untuk submit file. Oleh karena itu, hal yang dilakukan adalah melakukan analisis pada file .pcap dan melakukan follow TCP Stream. Lalu ditemukan pesan sebagai berikut dalam stream.
 
-![4_TCP](/Assets/4_TCP.png)
+![5_TCP](/Assets/5_TCP.png)
 
 Setelah kode didecode di https://www.base64decode.org/, maka password zip adalah = 5implePas5word. 
 
-![4_Decode](/Assets/4_Decode.png)
+![5_Decode](/Assets/5_Decode.png)
 
 File connect.txt di dalam .zip berisi command netcat.
 
-![4_Connect](/Assets/4_Connect.png)
+![5_Connect](/Assets/5_Connect.png)
 
 Selanjutnya kita perlu menjawab soal dari nc tersebut, untuk soal a, "Berapa banyak packet yang berhasil di capture dari file pcap tersebut?" jawabannya adalah 60.
 
-![4_60](/Assets/4_60.png)
+![5_60](/Assets/5_60.png)
 
 Untuk soal b, "Port berapakah pada server yang digunakan untuk service SMTP?" dapat dilihat di detail src packet yang menggunakan protocol SMTP
 
-![4_SMTP](/Assets/4_SMTP.png)
+![5_SMTP](/Assets/5_SMTP.png)
 
 Untuk soal c, "Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?" terdapat 2 buah IP dalam file tersebut karena ip yang melakukan komunikasi ada dua, 10.10.1.4 dan 74.53.140.153, dan ip yang berawalan 10 adalah ip private, maka jawabannya **74.53.140.153**.
 
