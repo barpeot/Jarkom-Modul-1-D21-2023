@@ -30,7 +30,7 @@ Berikut adalah screenshot flag dari soal 1.
 ## Soal 2
 Kita diminta mencari jenis web server pada portal praktikum jaringan komputer, cara paling mudah adalah dengan melakukan inspect element dan melihat pada bagian 'Network', kemudian buka bagian 'Header'
 
-![2_Addressing](/Assets/2_Addressing.png)
+![2_Addressing](/Assets/2_Addressing.jpg)
 
 
 Berikut adalah screenshot flag dari soal 2.
@@ -59,6 +59,14 @@ Berikut adalah screenshot flag dari soal 3.
 ![Flag_3](/Assets/Flag_3.png)
 
 ## Soal 4
+Untuk soal no 4. Kita hanya perlu melihat package nomor 130, kemudian klik 2x pada packagenya dan melihat ke bagian User Data Protocol. Dari sini kita akan dapat langsung melihat checksumnya.
+
+![4_Addressing](/Assets/4_Addressing.jpg)
+
+Berikut adalah screenshot flag dari soal 4.
+
+![Flag_4](/Assets/Flag_4.png)
+
 
 ## Soal 5
 Dalam soal diberikan sebuah file .zip dan file .pcap tetapi tidak ada data netcat untuk submit file. Oleh karena itu, hal yang dilakukan adalah melakukan analisis pada file .pcap dan melakukan follow TCP Stream. Lalu ditemukan pesan sebagai berikut dalam stream.
@@ -99,8 +107,24 @@ Berikut adalah screenshot flag dari soal 7:
 ![Flag_7](/Assets/Flag_7.png)
 
 ## Soal 8
+Kita bisa melihat pada file .pcap nya, bahwa da 3 protokol yang tercapture, yakni ARP, TCP, dan UDP. Karena ARP tidak menggunakan port, maka yang menggunakan port 80 kemungkinan adalah TCP dan UDP. Sehingga kita masukkan kueri di bawah
+```
+tcp.dstport == 80 || udp.dstport == 80
+```
+![8_Filter](/Assets/8_Filter.jpg)
+
+Berikut adalah screenshot flag dari soal 8:
+
+![Flag_8](/Assets/Flag_8.png)
 
 ## Soal 9
+Kita diminta mencari paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34. Dengan menggunakan kueri ip.src digabungkan dengan ip.dst menggunakan operator '&&', maka kita bisa menemukannya.
+
+![9_Filter](/Assets/9_Filter.jpg)
+
+Berikut adalah screenshot flag dari soal 9:
+
+![Flag_9](/Assets/Flag_9.png)
 
 ## Soal 10
 Dalam soal ini kita diminta untuk mencari kredensial login yang benar ketika user login menggunakan telnet. Untuk mengetahui hal tersebut perlu dilakukan follow TCP Stream pada packet TELNET.
