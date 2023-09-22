@@ -28,6 +28,8 @@ Berikut adalah screenshot flag dari soal 1.
 ![Flag_1](/Assets/Flag_1.png)
 
 ## Soal 2
+Kita diminta mencari jenis web server pada portal praktikum jaringan komputer, cara paling mudah adalah dengan melakukan inspect element dan melihat pada bagian 'Network', kemudian buka bagian 'Header'
+
 
 ## Soal 3
 Dalam soal ini diberikan file .pcap dan diminta untuk mencari banyak packet yang tercapture dengan IP source maupun destintation address 239.255.255.250 port 3702 dan Protokol layer transport proses tersebut.
