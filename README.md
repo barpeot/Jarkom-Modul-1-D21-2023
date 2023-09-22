@@ -127,6 +127,8 @@ Hasil jawabannya adalah
 JDRNJA
 ```
 
+Berikut adalah screenshot flag dari soal 6:
+
 ![Flag_6](/Assets/Flag_6.jpeg)
 
 ## Soal 7
