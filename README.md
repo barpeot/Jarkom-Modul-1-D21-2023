@@ -49,6 +49,8 @@ Berikut adalah screenshot flag dari soal 3.
 ![Flag_3](/Assets/Flag_3.png)
 
 ## Soal 4
+
+## Soal 5
 Dalam soal diberikan sebuah file .zip dan file .pcap tetapi tidak ada data netcat untuk submit file. Oleh karena itu, hal yang dilakukan adalah melakukan analisis pada file .pcap dan melakukan follow TCP Stream. Lalu ditemukan pesan sebagai berikut dalam stream.
 
 ![4_TCP](/Assets/4_TCP.png)
@@ -73,10 +75,8 @@ Untuk soal c, "Dari semua alamat IP yang tercapture, IP berapakah yang merupakan
 
 Berikut adalah screenshot flag dari soal 4:
 
-![Flag_4](/Assets/Flag_4.png)
+![Flag_5](/Assets/Flag_5.png)
  
-## Soal 5
-
 ## Soal 6
 
 ## Soal 7
