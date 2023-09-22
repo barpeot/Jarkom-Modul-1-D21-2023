@@ -96,6 +96,38 @@ Berikut adalah screenshot flag dari soal 4:
 ![Flag_5](/Assets/Flag_5.png)
  
 ## Soal 6
+Dalam soal kita diminta untuk membantu Slamet dalam menyelesaikan permasalahannya. Sesuai dengan soal, maka pertama kita pergi ke package nomor 7812, kemudian kita lihat source address nya.
+
+![6_Source](/Assets/6_Source.jpg)
+
+Kita dapatkan source addressnya adalah
+
+```104.18.14.101```
+
+Selanjutnya, kita bisa lihat bahwa pembuat soal menuliskan soal dengan membuat ada beberapa huruf yang tidak sesuai EYD, yakni dibuat kapital pada beberapa tempat yang tidak seharusnya
+```
+Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
+```
+Bila kita urutkan, maka akan kita dapatkan
+```
+SUBSTITUSI
+```
+Kemudian, dengan menggabungkan clue dari hasil pencarian google yang hanya menampilkan a1 e5 u21 yang menunjukkan bahwa ini merupakan kode chiper a1z26, maka kita ubah
+```
+104.18.14.10
+menjadi
+10 4 18 14 10
+```
+lalu kita decode menggunakan website tersendiri.
+
+![6_Decode](/Assets/6_Decode.jpg)
+
+Hasil jawabannya adalah 
+```
+JDRNJA
+```
+
+![Flag_6](/Assets/Flag_6.png)
 
 ## Soal 7
 Dalam soal kita diminta untuk mencari tahu berapa jumlah packet yang menuju IP 184.87.193.88 di dalam file .pcap yang diberikan. Maka kita hanya perlu memberi display filter "ip.dst == 184.87.193.88".
@@ -119,6 +151,9 @@ Berikut adalah screenshot flag dari soal 8:
 
 ## Soal 9
 Kita diminta mencari paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34. Dengan menggunakan kueri ip.src digabungkan dengan ip.dst menggunakan operator '&&', maka kita bisa menemukannya.
+```
+ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
+```
 
 ![9_Filter](/Assets/9_Filter.jpg)
 
