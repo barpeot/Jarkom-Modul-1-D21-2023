@@ -114,9 +114,9 @@ SUBSTITUSI
 ```
 Kemudian, dengan menggabungkan clue dari hasil pencarian google yang hanya menampilkan a1 e5 u21 yang menunjukkan bahwa ini merupakan kode chiper a1z26, maka kita ubah
 ```
-104.18.14.10
+104.18.14.101
 menjadi
-10 4 18 14 10
+10 4 18 14 10 1
 ```
 lalu kita decode menggunakan website tersendiri.
 
@@ -127,7 +127,7 @@ Hasil jawabannya adalah
 JDRNJA
 ```
 
-![Flag_6](/Assets/Flag_6.png)
+![Flag_6](/Assets/Flag_6.jpeg)
 
 ## Soal 7
 Dalam soal kita diminta untuk mencari tahu berapa jumlah packet yang menuju IP 184.87.193.88 di dalam file .pcap yang diberikan. Maka kita hanya perlu memberi display filter "ip.dst == 184.87.193.88".
