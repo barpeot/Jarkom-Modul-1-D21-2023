@@ -42,7 +42,7 @@ Berikut adalah screenshot flag dari soal 2.
 ## Soal 3
 Dalam soal ini diberikan file .pcap dan diminta untuk mencari banyak packet yang tercapture dengan IP source maupun destintation address 239.255.255.250 port 3702 dan Protokol layer transport proses tersebut.
 
-Pertama-tama buka display filter dan masukkan kueri ip.src == 239.255.255.250 or ip.dst == 239.255.255.250, maka akan ditemukan hasil seperti berikut:
+Pertama-tama buka display filter dan masukkan kueri ```ip.src == 239.255.255.250 or ip.dst == 239.255.255.250```, maka akan ditemukan hasil seperti berikut:
 
 ![3_Filter](/Assets/3_Filter.png)
 
@@ -132,7 +132,10 @@ Berikut adalah screenshot flag dari soal 6:
 ![Flag_6](/Assets/Flag_6.jpeg)
 
 ## Soal 7
-Dalam soal kita diminta untuk mencari tahu berapa jumlah packet yang menuju IP 184.87.193.88 di dalam file .pcap yang diberikan. Maka kita hanya perlu memberi display filter "ip.dst == 184.87.193.88".
+Dalam soal kita diminta untuk mencari tahu berapa jumlah packet yang menuju IP 184.87.193.88 di dalam file .pcap yang diberikan. Maka kita hanya perlu memberi display filter 
+```
+ip.dst == 184.87.193.88
+```
 
 ![7_Filter](/Assets/7_Filter.png)
 
@@ -172,7 +175,8 @@ Kemudian ditemukan attempt login yang berhasil pada stream ke-15. Disini kita da
 
 ![10_Kredensial](/Assets/10_Kredensial.png)
 
-Pada stream ke-2 ditemukan attempt sedemikian dimana passwordnya telah sesuai dengan attempt login yang benar. Maka jawaban dari soal ini adalah **dhafin:kesayangannyak0k0**
+Pada stream ke-2 ditemukan attempt sedemikian dimana passwordnya telah sesuai dengan attempt login yang benar. Maka jawaban dari soal ini adalah 
+```dhafin:kesayangannyak0k0```
 
 Berikut adalah screenshot flag dari soal 10:
 
