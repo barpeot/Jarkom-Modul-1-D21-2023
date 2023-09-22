@@ -2,7 +2,7 @@
 
 # Anggota Kelompok:
 + Akbar Putra Asenti Priyanto (5025211004)
-+ Farrela Ranku Mahhissa (5025211138)
++ Farrela Ranku Mahhissa (5025211129)
 
 ## Soal 1
 Dalam soal ini diberikan sebuah file .pcap dimana seorang user mengunggah sebuah file, kemudian kita diminta untuk mencari tahu raw sequence number dan raw acknowledge number dari proses tersebut dan response dari proses tersebut.
@@ -80,9 +80,29 @@ Berikut adalah screenshot flag dari soal 4:
 ## Soal 6
 
 ## Soal 7
+Dalam soal kita diminta untuk mencari tahu berapa jumlah packet yang menuju IP 184.87.193.88 di dalam file .pcap yang diberikan. Maka kita hanya perlu memberi display filter "ip.dst == 184.87.193.88".
+
+![7_Filter](/Assets/7_Filter.png)
+
+Berikut adalah screenshot flag dari soal 7:
+
+![Flag_7](/Assets/Flag_7.png)
 
 ## Soal 8
 
 ## Soal 9
 
 ## Soal 10
+Dalam soal ini kita diminta untuk mencari kredensial login yang benar ketika user login menggunakan telnet. Untuk mengetahui hal tersebut perlu dilakukan follow TCP Stream pada packet TELNET.
+
+![10_TCP](/Assets/10_TCP.png)
+
+Kemudian ditemukan attempt login yang berhasil pada stream ke-15. Disini kita dapat melihat password yang benar adalah **kesayangannyak0k0**, maka kita perlu mencari attempt login yang sesuai dengan password tersebut.
+
+![10_Kredensial](/Assets/10_Kredensial.png)
+
+Pada stream ke-2 ditemukan attempt sedemikian dimana passwordnya telah sesuai dengan attempt login yang benar. Maka jawaban dari soal ini adalah **dhafin:kesayangannyak0k0**
+
+Berikut adalah screenshot flag dari soal 10:
+
+![Flag_7](/Assets/Flag_10.png)
